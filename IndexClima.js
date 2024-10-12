@@ -1,4 +1,3 @@
-// Seleciona elementos do DOM
 const container = document.getElementById("container")
 const pesquisa = document.getElementById("pesquisar")
 const clima = document.getElementById("Clima")
