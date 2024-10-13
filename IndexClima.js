@@ -23,7 +23,6 @@ pesquisa.addEventListener("click", () => {
         mostrarErro(); //chamada da função de mostrar o erro que está mais abaixo
         return;
       }
-
       // Oculta a mensagem de erro caso a cidade seja encontrada
       erro.style.display = "none";
       erro.classList.remove("fadeIn");
@@ -61,8 +60,8 @@ pesquisa.addEventListener("click", () => {
       vento.innerHTML = `${parseInt(json.wind.speed)}km/h <br>Vento`;
       mostrarClima(); //Chamada da função de mostrar o clima
     })
+    // Tratamento dos erros que podem ocorrer durante a requisição
     .catch((error) => {
-      // Tratamento dos erros que podem ocorrer durante a requisição
       console.error("Erro ao buscar dados: ", error);
       alert("Houve um problema ao acessar a API. Tente novamente mais tarde.");
     });

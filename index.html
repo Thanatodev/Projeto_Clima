@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styleClima.css">
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleClima.css" />
     <title>Projeto Clima</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <div id="caixa-pesquisa">
-            <i class="fa-solid fa-location-dot"></i>
-            <input id="input" type="text" placeholder="Nome da cidade">
-            <button id="pesquisar" class="fa-solid fa-magnifying-glass"></button>
+      <div id="caixa-pesquisa">
+        <i class="fa-solid fa-location-dot"></i>
+        <input id="input" type="text" placeholder="Nome da cidade" />
+        <button id="pesquisar" class="fa-solid fa-magnifying-glass"></button>
+      </div>
+      <div id="NaoEncontrado">
+        <img id="404" src="imagens/404.png" />
+        <p>Oops! Localização inválida :(</p>
+      </div>
+      <div id="Clima">
+        <img id="imagem" src="" />
+        <p id="temperatura"></p>
+        <p id="descricao"></p>
+      </div>
+      <div id="detalhes">
+        <div id="umidade">
+          <i id="iumidade" class="fa-solid fa-water"></i>
+          <div id="text">
+            <span></span>
+            <p id="pumidade">Umidade</p>
+          </div>
         </div>
-        <div id="NaoEncontrado">
-            <img id="404" src="imagens/404.png">
-            <p>Oops! Localização inválida :(</p>
+        <div id="vento">
+          <i id="ivento" class="fa-solid fa-wind"></i>
+          <div id="text">
+            <span></span>
+            <p id="pvento">Velocidade do vento</p>
+          </div>
         </div>
-        <div id="Clima">
-            <img id="imagem" src="">
-            <p id="temperatura"></p>
-            <p id="descricao"></p>
-        </div>
-        <div id="detalhes">
-            <div id="umidade">
-                <i id="iumidade" class="fa-solid fa-water"></i>
-                <div id="text">
-                    <span></span>
-                    <p id ="pumidade">Umidade</p>
-                </div>
-            </div>
-            <div id="vento">
-                <i id="ivento" class="fa-solid fa-wind"></i>
-                <div id="text">
-                    <span></span>
-                    <p id="pvento">Velocidade do vento</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <footer><strong>&copy; Thanatodev</strong></footer>
-    <script src="https://kit.fontawesome.com/150bcd75d5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/150bcd75d5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="indexClima.js"></script>
-</body>
-
+  </body>
 </html>
